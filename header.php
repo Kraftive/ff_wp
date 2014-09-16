@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php global $data;?>
-<!--[if lt IE 7 ]><html class="ie ie6" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html <?php language_attributes(); ?>>
@@ -17,9 +14,6 @@
     <!-- Meta Tags -->
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>
-		<?php if (is_home() || is_front_page()){
-            bloginfo('name'); echo ' | '; bloginfo('description');
-        } else {
             wp_title('');
         }?>
         </title>
@@ -29,8 +23,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
     <!-- Favicon -->
-    	<?php //@TODO from theme options panel ?>
-    	<link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/favicon.ico" >
 	
     <!-- Stylesheets -->
         <link href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
